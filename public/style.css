@@ -1,0 +1,128 @@
+﻿@charset "utf-8";
+
+
+
+@media screen and (max-width: 480px) {
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+}
+
+.hello{
+    margin-left:20px;
+    font-size:60px;
+    color: rgb(255, 134, 207);
+    position: fixed;
+    top:0;
+
+}
+.cafe{
+    font-size:60px;
+    margin-left:40px;
+    color: rgb(255, 134, 207);
+    position: fixed;
+    top:90px;
+}
+
+body {
+    background-color: #00FFFF;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #174a5c;
+    color: white;
+    text-align: center;
+    line-height: 0.5em;
+    position: fixed;
+    bottom: 0;
+    font-size:20px;
+}
+
+.account{
+    width:340px;
+    height: 100px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 60px;
+    bottom:0;
+    background-color: hsl(136, 100%, 50%);
+    margin-bottom:430px;
+    margin-left:35px;
+    text-align: center;
+    position: fixed;
+    cursor: pointer;
+    
+}
+
+.ac{
+    width:350px;
+    font-size:40px;
+    height: 480px;
+    
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    
+}
+
+
+.game{
+    width:340px;
+    height: 100px;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: hsl(136, 100%, 50%);
+    border-radius: 60px;
+    bottom:0;
+    margin-bottom:280px;
+    margin-left:35px;
+    text-align: center;
+
+    position: fixed;
+    cursor: pointer;
+}
+.ga{
+    width:350px;
+    font-size:40px;
+    height: 330px;
+    
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    
+}
+.rule{
+    width:340px;
+    height: 100px;
+    border: 4px solid rgb(0, 0, 0);
+    background-color: hsl(136, 100%, 50%);
+    border-radius: 60px;
+    bottom:0;
+    margin-bottom:140px;
+    margin-left:35px;
+    text-align: center;
+
+    position: fixed;
+    cursor: pointer;
+}
+.ru{
+    width:350px;
+    font-size:40px;
+    height: 190px;
+    
+    text-align: center;
+
+    position: fixed;
+    bottom: 0;
+    
+}
+
+.sky{
+    z-index:-1;
+    position: absolute;
+}
+
+}

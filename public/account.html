@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+<link href="account.css" rel="stylesheet">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ハロカフェプロジェクト</title>
+</head>
+
+<header>
+
+</header>
+
+<footer>
+    <p>新潟職業能力開発短期大学校</p>
+    <p>山田ゼミメンバー</p>
+</footer>
+
+
+<body>
+    <canvas class="sky" id="myCanvas" width="430" height="932"></canvas>
+        <h1 class="hello">ハロカフェ</h1>
+        <h1 class="cafe">プロジェクト</h1>
+    <br>
+    <br>
+    <h1 class="info">アカウント情報入力</h1>
+<form>
+    <div class="waku">
+        <br>
+        <span>ニックネーム</span><br>
+        <input class="wa" type="text" required><br>
+
+        <span>アカウントID（自由）</span><br>
+        <input class="wa" type="text" required><br>
+
+        <span>パスワード</span><br>
+        <input class="wa" type="password" required><br>
+        <br>
+        <button class="but" type="submit">送信</button>
+    </div>
+</form>
+
+
+
+
+    
+    <script>
+        let canvas = document.getElementById("myCanvas");
+        let ctx = canvas.getContext("2d");
+        var a = -80;
+        var b = 0;
+        var c = -40;
+        var d = -230;
+        var e = -150;
+        var f = -190;
+
+        function draw() {
+            
+
+            
+            
+            
+            ctx.beginPath();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.rect(0, 0, 440, 590);
+            ctx.fillStyle = "#00FFFF";
+            ctx.fill();
+            ctx.closePath();
+
+            
+
+            ctx.beginPath();
+            ctx.arc(a, 100, 30, 0, Math.PI * 2, false);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(b, 100, 30, 0, Math.PI * 2, false);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(c, 90, 50, 0, Math.PI * 1, false);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+            
+            ctx.beginPath();
+            ctx.arc(c, 85, 40, 0, Math.PI * 2, false);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+
+
+
+
+
+            ctx.beginPath();
+            ctx.arc(d, 250, 30, 0, Math.PI * 2, false);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(e, 250, 30, 0, Math.PI * 2, false);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(f, 240, 50, 0, Math.PI * 1, false);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+            
+            ctx.beginPath();
+            ctx.arc(f, 235, 40, 0, Math.PI * 2, false);
+            ctx.fillStyle = "white";
+            ctx.fill();
+            ctx.closePath();
+
+            a++;
+            b++;
+            c++;
+            d++;
+            e++;
+            f++;
+
+            if(b==550){
+                a = -80;
+                b = 0;
+                c = -40;
+            }
+            if(e==550){
+                d = -80;
+                e = 0;
+                f = -40;
+            }
+
+
+            /*document.body.addEventListener('keydown',
+                event => {
+                    if (event.key == 'l') {
+                        b = 1;
+                    }
+                });*/
+
+        }
+
+
+        draw();
+
+
+        setInterval(draw, 1);
+
+        /*ctx.beginPath();
+        ctx.arc(40, 160, 20, 0, Math.PI * 2, false);
+        ctx.fillStyle = "green";
+        ctx.fill();
+        ctx.closePath();*/
+
+        /*ctx.beginPath();
+        ctx.rect(160, 10, 100, 40);
+        ctx.strokeStyle = "rgba(0, 0, 255, 0.5)";
+        ctx.stroke();
+        ctx.closePath();*/
+    </script>
+</body>
+
+</html>
